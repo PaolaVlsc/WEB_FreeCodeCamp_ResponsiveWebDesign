@@ -20,6 +20,7 @@
           name="txtFirstName"
           placeholder="Enter your name"
           required
+          class="user-input"
         />
 
         <label id="email-label" for="email">Email</label>
@@ -29,6 +30,7 @@
           name="email"
           placeholder="Enter your email"
           required
+          class="user-input"
         />
 
         <label id="number-label" for="number">Age (optional)</label>
@@ -40,10 +42,11 @@
           required
           min="10"
           max="99"
+          class="user-input"
         />
 
         <p>Which option best describes your current role?</p>
-        <select name="dropdown-role" id="dropdown">
+        <select name="dropdown-role" id="dropdown" class="dropdown">
           <option value="" disabled selected>Select current role</option>
           <option value="student">Student</option>
           <option value="full-time-job">Full Time Job</option>
@@ -53,25 +56,43 @@
         </select>
 
         <p>Would you recommend freeCodeCamp to a friend?</p>
-        <input
-          type="radio"
-          id="recommend01"
-          name="recommend"
-          value="Definitely"
-        />
-        <label for="recommend01">Definitely</label><br />
-        <input type="radio" id="recommend02" name="recommend" value="Maybe" />
-        <label for="recommend02">Maybe</label><br />
-        <input
-          type="radio"
-          id="recommend03"
-          name="recommend"
-          value="Not Sure"
-        />
-        <label for="recommend03">Not Sure</label><br />
+        <label>
+          <input
+            name="user-recommend"
+            value="definitely"
+            type="radio"
+            class="input-radio"
+            checked
+          />Definitely</label
+        >
+        <br />
+        <label>
+          <input
+            name="user-recommend"
+            value="maybe"
+            type="radio"
+            class="input-radio"
+          />Maybe</label
+        >
+        <br />
 
-        <p>What is your favorite feature of freeCodeCamp?</p>
-        <select name="dropdown-features" id="dropdown-features">
+        <label
+          ><input
+            name="user-recommend"
+            value="not-sure"
+            type="radio"
+            class="input-last"
+          />Not sure</label
+        >
+
+        <p class="favorite-feature">
+          What is your favorite feature of freeCodeCamp?
+        </p>
+        <select
+          name="dropdown-features"
+          id="dropdown-features"
+          class="dropdown"
+        >
           <option value="" disabled selected>Select an option</option>
           <option value="challenges">Challenges</option>
           <option value="projects">Projects</option>
@@ -140,12 +161,17 @@
           id="additional-courses"
           name="additional-courses"
           value="additional-courses"
+          class="input-last"
         />
         <label for="additional-courses">Additional Courses</label><br />
 
         <p>Any comments or suggestions?</p>
-        <textarea id="area" placeholder="Enter your comment here..."></textarea>
-        <input type="submit" value="Submit" id="submit" />
+        <textarea
+          id="area"
+          class="input-textarea"
+          placeholder="Enter your comment here..."
+        ></textarea>
+        <input type="submit" value="Submit" id="submit" class="submit-button" />
       </form>
     </div>
   </body>
