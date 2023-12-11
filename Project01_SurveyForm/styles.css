@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-image: url("codelive.png"); */
+  background-color: rgba(
+    27,
+    27,
+    50,
+    0.8
+  ); /* Blue color with 50% transparency */
+  font-family: sans-serif;
+  color: white;
+  display: block;
+}
+
+.container {
+  width: 825px;
+  margin: 50px auto;
+  background-color: blue;
+}
+
+h1,
+#description {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+#description {
+  font-style: italic;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+#survey-form {
+  background-color: red;
+  padding: 30px 25px;
+}
