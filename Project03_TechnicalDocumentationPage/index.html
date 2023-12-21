@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Technical Documentation</title>
     <link rel="stylesheet" href="styles.css" />
+    <title>Technical Documentation Page</title>
   </head>
   <body>
-    <nav id="navbar">
+    <nav id="navbar" class="sidenav">
       <header>JS Documentation</header>
       <ul>
         <li><a class="nav-link" href="#Introduction">Introduction</a></li>
@@ -48,7 +46,7 @@
         <li><a class="nav-link" href="#Reference">Reference</a></li>
       </ul>
     </nav>
-    <main id="main-doc">
+    <main id="main-doc" class="main">
       <section class="main-section" id="Introduction">
         <header>Introduction</header>
         <article>
@@ -152,23 +150,26 @@
       </section>
       <section class="main-section" id="Variables">
         <header>Variables</header>
-        <p>
-          You use variables as symbolic names for values in your application.
-          The names of variables, called identifiers, conform to certain rules.
-        </p>
-        <p>
-          A JavaScript identifier must start with a letter, underscore (_), or
-          dollar sign ($); subsequent characters can also be digits (0-9).
-          Because JavaScript is case sensitive, letters include the characters
-          "A" through "Z" (uppercase) and the characters "a" through "z"
-          (lowercase).
-        </p>
-        <p>
-          You can use ISO 8859-1 or Unicode letters such as å and ü in
-          identifiers. You can also use the Unicode escape sequences as
-          characters in identifiers. Some examples of legal names are
-          Number_hits, temp99, and _name.
-        </p>
+        <article>
+          <p>
+            You use variables as symbolic names for values in your application.
+            The names of variables, called identifiers, conform to certain
+            rules.
+          </p>
+          <p>
+            A JavaScript identifier must start with a letter, underscore (_), or
+            dollar sign ($); subsequent characters can also be digits (0-9).
+            Because JavaScript is case sensitive, letters include the characters
+            "A" through "Z" (uppercase) and the characters "a" through "z"
+            (lowercase).
+          </p>
+          <p>
+            You can use ISO 8859-1 or Unicode letters such as å and ü in
+            identifiers. You can also use the Unicode escape sequences as
+            characters in identifiers. Some examples of legal names are
+            Number_hits, temp99, and _name.
+          </p>
+        </article>
       </section>
       <section class="main-section" id="Declaring_variables">
         <header>Declaring variables</header>
