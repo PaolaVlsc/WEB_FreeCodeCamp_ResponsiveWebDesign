@@ -73,6 +73,52 @@ section {
 
 .work {
   background-color: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-2,
+.show-all {
+  margin: 20px;
+}
+
+/* Projects Wrapper */
+.wrapper--projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px; /* Adjust gap as needed */
+  max-width: 1200px; /* Optional: set a maximum width for the grid */
+  margin: 0 auto; /* Center the grid horizontally */
+}
+
+/* Individual Card */
+.card {
+  background-color: red;
+  flex: 0 1 calc(33.333% - 16px); /* Adjust the percentage as needed */
+  box-sizing: border-box;
+  text-align: center; /* Center text horizontally within the card */
+}
+
+/* Card Link */
+.card-link {
+  display: flex;
+  flex-direction: column; /* Arrange children vertically */
+  align-items: center;
+  text-decoration: none;
+}
+
+/* Card Image */
+.card-img {
+  width: 100%;
+  height: auto;
+}
+
+/* Card Description */
+.card-description {
+  margin-top: 8px; /* Adjust margin as needed */
 }
 
 /* SECTION 3 */
