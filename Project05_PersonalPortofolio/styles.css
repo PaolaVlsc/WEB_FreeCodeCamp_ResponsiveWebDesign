@@ -39,6 +39,7 @@ body {
   background-color: #676d74;
   color: white;
 }
+
 /* END Navigation CSS Header */
 
 .main {
@@ -166,4 +167,10 @@ footer {
   justify-content: space-around;
   padding: 20px;
   border-top: 5px solid red;
+}
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
 }
