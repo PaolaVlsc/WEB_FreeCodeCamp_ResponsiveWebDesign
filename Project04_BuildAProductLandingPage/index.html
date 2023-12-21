@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="styles.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
     <title>Product Landing Page</title>
   </head>
   <body>
@@ -28,27 +32,28 @@
     </div>
     <!-- Main -->
     <div class="main">
-      <h1>Handcrafted, home-made masterpieces</h1>
-      <!-- Form  -->
-      <form
-        action="https://www.freecodecamp.com/email-submit"
-        class="form"
-        id="form"
-      >
-        <input
-          id="email"
-          placeholder="Enter your email address"
-          type="email"
-          name="email"
-        />
-        <input id="submit" type="submit" value="Get Started" class="btn" />
-      </form>
-
+      <div class="start">
+        <h1>Handcrafted, home-made masterpieces</h1>
+        <!-- Form  -->
+        <form
+          action="https://www.freecodecamp.com/email-submit"
+          class="form"
+          id="form"
+        >
+          <input
+            id="email"
+            placeholder="Enter your email address"
+            type="email"
+            name="email"
+          />
+          <input id="submit" type="submit" value="Get Started" class="btn" />
+        </form>
+      </div>
       <!-- Features Section -->
       <section class="features" id="features">
         <!-- Feature 1  -->
         <div class="feature materials">
-          <div class="icon"></div>
+          <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
           <div class="details">
             <h2>Premium Materials</h2>
             <p>
@@ -59,7 +64,7 @@
         </div>
         <!-- Feature 2  -->
         <div class="feature shipping">
-          <div class="icon"></div>
+          <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
           <div class="details">
             <h2>Fast Shipping</h2>
             <p>
@@ -70,7 +75,9 @@
         </div>
         <!-- Feature 3  -->
         <div class="feature qa">
-          <div class="icon"></div>
+          <div class="icon">
+            <i class="fa fa-3x fa-battery-full"></i>
+          </div>
           <div class="details">
             <h2>Quality Assurance</h2>
             <p>
